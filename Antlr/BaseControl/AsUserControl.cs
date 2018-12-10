@@ -1,7 +1,7 @@
 ﻿using System.Windows.Controls;
-using Parcer.ViewModel;
+using Antlr.ViewModel;
 
-namespace Antlr.BaseControls
+namespace Antlr.BaseControl
 {
     public class AsUserControl<T> : UserControl where T : ViewModelBase, new()
     {

@@ -1,4 +1,4 @@
-﻿using Parcer.ViewModel;
+﻿using Antlr.ViewModel;
 
 namespace Antlr
 {

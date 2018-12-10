@@ -1,7 +1,7 @@
 ﻿using System.Windows;
-using Parcer.ViewModel;
+using Antlr.ViewModel;
 
-namespace Antlr.BaseControls
+namespace Antlr.BaseControl
 {
     public class AsWindow<T> : Window where T : ViewModelBase, new()
     {

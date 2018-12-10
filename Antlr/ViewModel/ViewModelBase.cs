@@ -3,9 +3,8 @@ using System.ComponentModel;
 using System.Linq.Expressions;
 using System.Windows;
 using System.Windows.Input;
-using Antlr.ViewModel;
 
-namespace Parcer.ViewModel
+namespace Antlr.ViewModel
 {
     public abstract class ViewModelBase : DependencyObject, INotifyPropertyChanged
     {
@@ -16,11 +15,6 @@ namespace Parcer.ViewModel
         protected void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        protected void OnPropertyChanged<T>(Expression<Func<T>> p)
-        {
-            OnPropertyChanged(TypeHelper.GetPropertyName(p));
         }
 
         #endregion
