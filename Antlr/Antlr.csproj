@@ -74,6 +74,12 @@
     <Compile Include="Grammar\Calc.g4.parser.cs">
       <DependentUpon>Calc.g4</DependentUpon>
     </Compile>
+    <Compile Include="Grammar\tsql.g4.lexer.cs">
+      <DependentUpon>tsql.g4</DependentUpon>
+    </Compile>
+    <Compile Include="Grammar\tsql.g4.parser.cs">
+      <DependentUpon>tsql.g4</DependentUpon>
+    </Compile>
     <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="Frame\TextViewModel.cs" />
     <Compile Include="ViewModel\Utils.cs" />
@@ -118,6 +124,10 @@
       <Generator>MSBuild:Compile</Generator>
       <CustomToolNamespace>Antlr.Grammar</CustomToolNamespace>
       <Listener>False</Listener>
+    </Antlr4>
+    <Antlr4 Include="Grammar\tsql.g4">
+      <Generator>MSBuild:Compile</Generator>
+      <CustomToolNamespace>Antlr.Grammar</CustomToolNamespace>
     </Antlr4>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

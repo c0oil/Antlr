@@ -7,9 +7,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Antlr"
         xmlns:baseControl="clr-namespace:Antlr.BaseControl"
+        xmlns:frame="clr-namespace:Antlr.Frame"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+      <frame:TextView/>
     </Grid>
 </baseControl:AsWindow>
